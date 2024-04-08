@@ -11,7 +11,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="right md:w-[50%] flex justify-center items-center">
-        <img src="src/assets/paper.png" alt="" width={'50%'} />
+        <img src="/paper.png" alt="" width={'50%'} />
       </div>
    </div>
   );
