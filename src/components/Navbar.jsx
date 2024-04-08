@@ -8,21 +8,22 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-500 py-4">
+    <nav className="py-4">
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <span className="text-white font-semibold text-lg">EaseWrite</span>
+          <span className="text-black font-bold text-lg">Ease <span className='text-blue-500'>Write</span></span>
         </div>
         <div className="hidden md:block">
-          <a href="#" className="text-white px-4 py-2">Home</a>
-          <a href="#" className="text-white px-4 py-2">About</a>
-          <a href="#" className="text-white px-4 py-2">Services</a>
-          <a href="#" className="text-white px-4 py-2">Contact</a>
+          <a href="#" className="text-black px-6 py-2 font-bold">Home</a>
+          <a href="#" className="text-gray-500 px-6 py-2 font-bold">About</a>
+          <a href="#" className="text-gray-500 px-6 py-2 font-bold">Services</a>
+          <a href="#" className="text-gray-500 px-6 py-2 font-bold">Contact</a>
         </div>
+        <button className='hidden md:block bg-blue-500 px-7 py-2 rounded-full text-white font-bold'>Login</button>
         <div className="block md:hidden">
           <button
             onClick={toggleMenu}
-            className="text-white focus:outline-none"
+            className="text-black focus:outline-none"
           >
             <svg
               className="h-6 w-6"
@@ -44,6 +45,7 @@ const Navbar = () => {
               <a href="#" className="block text-white px-4 py-2">About</a>
               <a href="#" className="block text-white px-4 py-2">Services</a>
               <a href="#" className="block text-white px-4 py-2">Contact</a>
+              <button className='block text-white px-4 py-2'>Login</button>
             </div>
           )}
         </div>

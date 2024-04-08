@@ -32,27 +32,28 @@ const TextEditor = () => {
     document.body.removeChild(link);
   };
 
-    return (
-        <>
-    <div className="p-4">
-      <ReactQuill
-        className="h-screen w-full md:w-3/4 lg:w-2/3 mx-auto"
-        ref={editorRef}
-        value={text}
-        onChange={handleChange}
-        modules={TextEditor.modules}
-        formats={TextEditor.formats}
-        placeholder="Write something..."
-      />
-     
+  return (
+    <>
+      <div className="p-4">
+        <ReactQuill
+          className="h-screen w-full md:w-3/4 lg:w-2/3 mx-auto"
+          ref={editorRef}
+          value={text}
+          onChange={handleChange}
+          modules={TextEditor.modules}
+          formats={TextEditor.formats}
+          placeholder="Write something..."
+        />
       </div>
-       <button
-       className="mt-20 z-50 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-       onClick={exportAsDoc}
-     >
-       Export as DOC
-     </button>
-      </>
+      <div className="flex justify-center items-center py-4">
+        <button
+          className="mt-20 z-50 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          onClick={exportAsDoc}
+        >
+         Download<u className="pl-3">↓</u>
+        </button>
+      </div>
+    </>
   );
 };
 

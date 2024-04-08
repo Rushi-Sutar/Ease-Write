@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
